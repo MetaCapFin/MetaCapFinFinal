@@ -1,12 +1,13 @@
 "use client";
 
-import Footer from '@/components/footer/footer'
-import Button from '@/components/ui/button'
-import WButton from '@/components/ui/button-white'
-import GradientText from '@/components/ui/gradient-text'
-import Image from 'next/image'
-import React, { useState } from 'react'
-import Modal from '@/components/ui/modal' // Import the Modal component
+import Footer from '@/components/footer/footer';
+import Button from '@/components/ui/button';
+import WButton from '@/components/ui/button-white';
+import GradientText from '@/components/ui/gradient-text';
+import Image from 'next/image';
+import React, { useState } from 'react';
+import Modal from '@/components/ui/modal'; // Import the Modal component
+import Link from 'next/link'; // Import Link from next/link
 
 const Page = () => {
     const [formData, setFormData] = useState({
@@ -67,10 +68,12 @@ const Page = () => {
         <section className='relative overflow-y-hidden'>
             <div className='max-w-[660px] mx-auto pt-[70px] mb-0'>
                 <div className='flex justify-center'>
-                    <WButton>
-                        <Image src="/assets/svg/partner.svg" alt="" width={20} height={20} />
-                        Connect with us
-                    </WButton>
+                    <Link href="/join-our-list">
+                        <WButton>
+                            <Image src="/assets/svg/partner.svg" alt="" width={20} height={20} />
+                            Connect with us
+                        </WButton>
+                    </Link>
                 </div>
                 <GradientText className="text-center mt-7 !text-white" small>
                     Let's dig into how Meta Capital can help <span>your business</span>
@@ -116,7 +119,7 @@ const Page = () => {
             <Image src="/assets/images/right_circle.png" alt='' className='right-0 top-0 absolute -z-[1]' width={836} height={658} />
             <Footer/>
         </section>
-    )
+    );
 }
 
 export default Page;
