@@ -1,10 +1,9 @@
 "use client"
-import Footer from '@/components/footer/footer';
-import WButton from '@/components/ui/button-white';
-import GradientText from '@/components/ui/gradient-text';
-import Image from 'next/image';
-import React, { useEffect } from 'react';
-import Link from 'next/link';
+import Footer from '@/components/footer/footer'
+import WButton from '@/components/ui/button-white'
+import GradientText from '@/components/ui/gradient-text'
+import Image from 'next/image'
+import React, { useEffect } from 'react'
 
 const Page = () => {
 
@@ -32,17 +31,6 @@ const Page = () => {
                     Let's dig into how Meta Capital can help <span>your business</span>
                 </GradientText>
             </div>
-            <div className='flex justify-center mt-8'>
-                <Link href="#solution">
-                    <div className='!py-[8px] px-[20px] border rounded-2xl border-transparent hover:border-[#313041] hover_insetshadow'>Borrowers</div>
-                </Link>
-                <Link href="#service">
-                    <div className='!py-[8px] px-[20px] border rounded-2xl border-transparent hover:border-[#313041] hover_insetshadow'>Investors</div>
-                </Link>
-                <Link href="#partners">
-                    <div className='!py-[8px] px-[20px] border rounded-2xl border-transparent hover:border-[#313041] hover_insetshadow'>Partners</div>
-                </Link>
-            </div>
             <div
                 className="calendly-inline-widget "
                 data-url="https://calendly.com/carlos-alvarez-tym/30-minute-meeting-clone?background_color=05041a&text_color=ffffff&primary_color=21fdf6"
@@ -51,9 +39,7 @@ const Page = () => {
             <Image src="/assets/images/dots.png" alt="" className="w-full absolute opacity-20 top-0 left-1/2 -translate-x-1/2 -z-[1]" width={1500} height={400} />
             <Image src="/assets/images/left-circle.png" alt='' className='left-0 absolute md:top-0 -z-[1]' width={836} height={658} />
             <Image src="/assets/images/right_circle.png" alt='' className='right-0 md:top-0 absolute -z-[1]' width={836} height={658} />
-            <Footer />
+            <Footer/>
         </section>
-    );
+    )
 }
-
-export default Page;
