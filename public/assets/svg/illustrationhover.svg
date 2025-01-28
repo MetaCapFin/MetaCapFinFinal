@@ -1,5 +1,8 @@
 <svg width="384" height="208" viewBox="0 0 384 208" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_bii_167_6387)">
+<rect width="432" height="428" rx="20" fill="white" fill-opacity="0.02"/>
+<rect x="0.5" y="0.5" width="431" height="427" rx="19.5" stroke="white" stroke-opacity="0.06"/>
+<rect x="0.5" y="0.5" width="431" height="427" rx="19.5" stroke="url(#paint0_linear_167_6387)"/>
 <path style="mix-blend-mode:color-dodge" d="M369.996 67.5488C369.996 63.176 373.541 59.6313 377.914 59.6313C382.286 59.6313 385.831 63.176 385.831 67.5488C385.831 71.9215 382.286 75.4663 377.914 75.4663C373.541 75.4663 369.996 71.9215 369.996 67.5488Z" fill="url(#paint1_radial_167_6387)" fill-opacity="0.8"/>
 <path style="mix-blend-mode:color-dodge" d="M116.635 49.933C116.635 45.5603 120.179 42.0155 124.552 42.0155C128.925 42.0155 132.47 45.5603 132.47 49.933C132.47 54.3058 128.925 57.8506 124.552 57.8506C120.179 57.8506 116.635 54.3058 116.635 49.933Z" fill="url(#paint2_radial_167_6387)" fill-opacity="0.8"/>
 <path style="mix-blend-mode:color-dodge" d="M24.7914 69.7268C24.7914 66.6659 27.2728 64.1845 30.3337 64.1845C33.3946 64.1845 35.876 66.6659 35.876 69.7268C35.876 72.7877 33.3946 75.269 30.3337 75.269C27.2728 75.269 24.7914 72.7877 24.7914 69.7268Z" fill="url(#paint3_radial_167_6387)" fill-opacity="0.8"/>
