@@ -15,14 +15,14 @@ const EmpouringGrowth = () => {
             small
           >
             Empowering Growth <br />
-            <span>Fueling Returns</span>
+            <span>Fueling Returns</span>
           </GradientText>
           <p className="text-white/70 max-w-[660px] font-light text-center mb-10 text-xl mx-auto">
-            Whether you’r growing your business or growing your
-            wealth, MetaCap your success.
+            Whether you’re growing your business or growing your
+            wealth, MetaCap your success.
           </p>
-          <Link href="/contact-us">
-            <Button bg  className="!py-[16px] w-[236px]">Connect with us</Button>
+          <Link href="/join-our-list">
+            <Button bg className="!py-[16px] w-[236px]">Connect with us</Button>
           </Link>
         </div>
         <Image
