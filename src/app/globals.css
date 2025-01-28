@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background-color: #050419;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.insetshadow {
+  box-shadow: 0px 0px 20px -15px rgba(255, 255, 255, 0.75) inset;
+}
+.insetshadow2 {
+  box-shadow: 0px 0px 20px -15px rgba(255, 255, 255, 0.4) inset;
+}
+.hover_insetshadow:hover {
+  box-shadow: 0px 0px 20px -15px rgba(255, 255, 255, 0.75) inset;
+}
+
+/* Glow Animation - Move  */
+.moving_glow_animation {
+  position: relative;
+}
+.moving_glow_animation_white {
+  position: relative;
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.moving_glow_animation::after,
+.moving_glow_animation::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    rgba(255, 0, 0, 0) 94%,
+    #20e5e1
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 21px;
+  animation: 10s spin linear infinite;
+}
+.moving_glow_animation::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.moving_glow_animation_white::after,
+.moving_glow_animation_white::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    rgba(255, 0, 0, 0) 94%,
+    #f4f4f4
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 100px;
+  animation: 10s spin linear infinite;
+}
+
+
+.gradient-text {
+  font-weight: 700;
+}
+
+.gradient-text span {
+  background: linear-gradient(90deg, #9f37ff, #00a1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@media (max-width: 768px) {
+  .gradientText{
+    font-size: 34px !important;
+  }
+}
+
+.bg3{
+  background-image: url('../../public/assets/images/bg3.png') ;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+
+.slideInDown {
+  -webkit-animation: slideInDown 5s infinite linear;
+  animation: slideInDown 5s infinite linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+.bgbtn{
+  transition: .5s linear ease-in-out;
+}
+.bgbtn:hover {
+  background: linear-gradient(209deg, rgba(127,144,252,1) 0%, rgba(185,58,255,1) 80%);
+}
+
+.bgtbtn:hover{
+  background: linear-gradient(180deg, rgba(127,144,252,0) 52%, rgba(58,217,252,0.1358193277310925) 100%);
+}

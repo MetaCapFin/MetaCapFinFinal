@@ -1,0 +1,66 @@
+import Footer from '@/components/footer/footer'
+import Button from '@/components/ui/button'
+import WButton from '@/components/ui/button-white'
+import GradientText from '@/components/ui/gradient-text'
+import Image from 'next/image'
+import React from 'react'
+
+const Page = () => {
+
+    return (
+        <section className='relative overflow-y-hidden'>
+            <div className='max-w-[660px] mx-auto pt-[70px] mb-0'>
+                <div className='flex justify-center'>
+                    <WButton>
+                        <Image src="/assets/svg/partner.svg" alt="" width={20} height={20} />
+                        Connect with us
+                    </WButton>
+                </div>
+                <GradientText className="text-center mt-7 !text-white" small>
+                    Let's dig into how Meta Capital can help <span>your business</span>
+                </GradientText>
+            </div>
+            <div className='mt-16 max-w-[860px] mx-auto text-white'>
+                <div className='flex w-full gap-3'>
+                    <div className='flex flex-col gap-1 flex-1'>
+                        <label className=''>First Name</label>
+                        <input type='text' className='w-full mt-1 rounded-lg bg-transparent border p-3 border-gray-600' />
+                    </div>
+                    <div className='flex flex-col gap-1 flex-1'>
+                        <label>Last Name</label>
+                        <input type='text' className='w-full mt-1 rounded-lg bg-transparent border p-3 border-gray-600' />
+                    </div>
+                </div>
+                <div className='flex w-full gap-3 mt-3'>
+                    <div className='flex flex-col gap-1 flex-1'>
+                        <label className=''>Company Name</label>
+                        <input type='text' className='w-full mt-1 rounded-lg bg-transparent border p-3 border-gray-600' />
+                    </div>
+                </div>
+                <div className='flex w-full gap-3 mt-3'>
+                    <div className='flex flex-col gap-1 flex-1'>
+                        <label className=''>Email</label>
+                        <input type='email' className='w-full mt-1 rounded-lg bg-transparent border p-3 border-gray-600' />
+                    </div>
+                    <div className='flex flex-col gap-1 flex-1'>
+                        <label>Phone Number</label>
+                        <input type='number' className='w-full mt-1 rounded-lg bg-transparent border p-3 border-gray-600' />
+                    </div>
+                </div>
+                <div className='mt-3'>
+                    <label>Phone Number</label>
+                    <textarea className='w-full mt-1 rounded-lg bg-transparent border p-3 border-gray-600 h-[120px]'></textarea>
+                </div>
+                <div className='mt-6 flex justify-center'>
+                    <Button bg>Send Message</Button>
+                </div>
+            </div>
+            <Image src="/assets/images/dots.png" alt="" className="w-full absolute opacity-20 top-0 left-1/2 -translate-x-1/2 -z-[1]" width={1500} height={400} />
+            <Image src="/assets/images/left-circle.png" alt='' className='left-0 absolute top-0 -z-[1]' width={836} height={658} />
+            <Image src="/assets/images/right_circle.png" alt='' className='right-0 top-0 absolute -z-[1]' width={836} height={658} />
+            <Footer/>
+        </section>
+    )
+}
+
+export default Page
