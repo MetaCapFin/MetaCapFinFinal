@@ -43,3 +43,6 @@ const Page = () => {
         </section>
     )
 }
+
+export default Page
+
