@@ -22,6 +22,7 @@ const AllInOneService = () => {
                     <div className='insetshadow2 rounded-[20px] p-6 border-[2px] border-[#2D2C3F]'>
                         <figure className='lg:h-[216px] hover-image'>
                             <Image src="/assets/svg/illustration.svg" alt='' width={400} height={208} />
+                            <Image src="/assets/svg/illustrationhover.svg" alt='' width={400} height={208} />
                         </figure>
                         <h4 className='text-2xl font-semibold mt-7 max-w-[300px]'>On-demand reporting (Coming soon)</h4>
                         <p className='mt-3 text-white/60'>No more waiting for your Banks to provide multiple reports. Get immediate access to your balance, vendors and reporting. Coming soon.</p>
