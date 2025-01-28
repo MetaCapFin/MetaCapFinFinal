@@ -20,7 +20,7 @@ const AllInOneService = () => {
             <div className='mt-20'>
                 <Container className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:grid-cols-3 z-10 relative">
                     <div className='insetshadow2 rounded-[20px] p-6 border-[2px] border-[#2D2C3F]'>
-                        <figure className='lg:h-[216px]'>
+                        <figure className='lg:h-[216px] hover-image'>
                             <Image src="/assets/svg/illustration.svg" alt='' width={400} height={208} />
                         </figure>
                         <h4 className='text-2xl font-semibold mt-7 max-w-[300px]'>On-demand reporting (Coming soon)</h4>
@@ -38,14 +38,13 @@ const AllInOneService = () => {
                         </div>
                     </div>
                     <div className='insetshadow2 relative rounded-[20px] p-6 pt-14 group border-[2px] border-[#2D2C3F]'>
-                        <section
-                         className='max-w-[320px] mx-auto h-[216px] relative'>
+                        <section className='max-w-[320px] mx-auto h-[216px] relative'>
                             <div className='flex justify-center'>
                                 <div className='bg-[#4d4e5f]/20 rounded-[16px] absolute top-0 w-[70%] group-hover:top-5 transition-all duration-1000'>
                                     <Image src="/assets/svg/vard.svg" alt='' width={400} height={208} className='' />
                                 </div>
                             </div>
-                             <div className='flex justify-center'>
+                            <div className='flex justify-center'>
                                 <div className='bg-[#4d4e5f] rounded-[16px] absolute top-3 w-[80%] group-hover:top-5 transition-all duration-1000'>
                                     <Image src="/assets/svg/vard.svg" alt='' width={400} height={208} className='' />
                                 </div>
@@ -61,7 +60,7 @@ const AllInOneService = () => {
                                 </div>
                             </div>
                         </section>
-                            <Image src="/assets/svg/circles.svg" alt='' width={300} height={100} className='absolute opacity-40 -z-[1] top-5 left-0 w-full'/>
+                        <Image src="/assets/svg/circles.svg" alt='' width={300} height={100} className='absolute opacity-40 -z-[1] top-5 left-0 w-full'/>
                         <h4 className='text-2xl font-semibold mt-0 max-w-[300px]'>Personalized Support</h4>
                         <p className='mt-3 text-white/60'>We provide personalized support to tackle the most important working capital challenges. Without too much oversight or obscure approval requirements.</p>
                     </div>
