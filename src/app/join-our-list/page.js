@@ -13,12 +13,16 @@ const Page = () => {
         script.async = true;
         script.onload = () => {
             console.log("Calendly widget script loaded");
-            Calendly.initInlineWidget({
-                url: "https://calendly.com/carlos-alvarez-tym/30-minute-meeting-clone?background_color=05041a&text_color=ffffff&primary_color=21fdf6",
-                parentElement: document.querySelector(".calendly-inline-widget"),
-                prefill: {},
-                utm: {}
-            });
+            if (typeof Calendly !== 'undefined') {
+                Calendly.initInlineWidget({
+                    url: "https://calendly.com/carlos-alvarez-tym/30-minute-meeting-clone?background_color=05041a&text_color=ffffff&primary_color=21fdf6",
+                    parentElement: document.querySelector(".calendly-inline-widget"),
+                    prefill: {},
+                    utm: {}
+                });
+            } else {
+                console.error("Calendly is not defined");
+            }
         };
         document.body.appendChild(script);
 
