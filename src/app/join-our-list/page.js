@@ -1,4 +1,3 @@
-"use client"
 import Footer from '@/components/footer/footer'
 import WButton from '@/components/ui/button-white'
 import GradientText from '@/components/ui/gradient-text'
@@ -13,25 +12,8 @@ const Page = () => {
         script.async = true;
         document.body.appendChild(script);
 
-        const handleEventScheduled = (event) => {
-            console.log("Event scheduled:", event.detail);
-            fetch("https://hooks.zapier.com/hooks/catch/20787888/2fsz8hg/", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(event.detail)
-            })
-            .then(response => response.json())
-            .then(data => console.log("Success:", data))
-            .catch(error => console.error("Error:", error));
-        };
-
-        window.addEventListener("calendly.event_scheduled", handleEventScheduled);
-
         return () => {
             document.body.removeChild(script);
-            window.removeEventListener("calendly.event_scheduled", handleEventScheduled);
         };
     }, []);
 
@@ -49,7 +31,7 @@ const Page = () => {
                 </GradientText>
             </div>
             <div
-                className="calendly-inline-widget"
+                className="calendly-inline-widget "
                 data-url="https://calendly.com/carlos-alvarez-tym/30-minute-meeting-clone?background_color=05041a&text_color=ffffff&primary_color=21fdf6"
                 style={{ minWidth: "320px", height: "900px" }}
             ></div>
