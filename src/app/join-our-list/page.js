@@ -1,3 +1,4 @@
+"use client"
 import Footer from '@/components/footer/footer'
 import WButton from '@/components/ui/button-white'
 import GradientText from '@/components/ui/gradient-text'
