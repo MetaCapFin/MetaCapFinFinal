@@ -14,13 +14,17 @@ const Page = () => {
         document.body.appendChild(script);
 
         const handleEventScheduled = (event) => {
+            console.log("Event scheduled:", event.detail);
             fetch("https://hooks.zapier.com/hooks/catch/20787888/2fsz8hg/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify(event.detail)
-            });
+            })
+            .then(response => response.json())
+            .then(data => console.log("Success:", data))
+            .catch(error => console.error("Error:", error));
         };
 
         window.addEventListener("calendly.event_scheduled", handleEventScheduled);
@@ -58,4 +62,3 @@ const Page = () => {
 }
 
 export default Page
-
