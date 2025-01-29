@@ -32,7 +32,7 @@ const Page = () => {
                 </GradientText>
             </div>
             <div
-                className="calendly-inline-widget "
+                className="calendly-inline-widget"
                 data-url="https://calendly.com/carlos-alvarez-tym/30-minute-meeting-clone?background_color=05041a&text_color=ffffff&primary_color=21fdf6"
                 style={{ minWidth: "320px", height: "900px" }}
             ></div>
