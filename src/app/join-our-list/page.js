@@ -13,8 +13,21 @@ const Page = () => {
         script.async = true;
         document.body.appendChild(script);
 
+        const handleEventScheduled = (event) => {
+            fetch("https://hooks.zapier.com/hooks/catch/your-webhook-id/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(event.detail)
+            });
+        };
+
+        window.addEventListener("calendly.event_scheduled", handleEventScheduled);
+
         return () => {
             document.body.removeChild(script);
+            window.removeEventListener("calendly.event_scheduled", handleEventScheduled);
         };
     }, []);
 
@@ -32,8 +45,8 @@ const Page = () => {
                 </GradientText>
             </div>
             <div
-                className="calendly-inline-widget "
-                data-url="https://calendly.com/carlos-alvarez-tym/30-minute-meeting-clone?background_color=05041a&text_color=ffffff&primary_color=21fdf6"
+                className="calendly-inline-widget"
+                data-url="https://calendly.com/carlos-alvarez-tym/30-minute-meeting-clone"
                 style={{ minWidth: "320px", height: "900px" }}
             ></div>
             <Image src="/assets/images/dots.png" alt="" className="w-full absolute opacity-20 top-0 left-1/2 -translate-x-1/2 -z-[1]" width={1500} height={400} />
