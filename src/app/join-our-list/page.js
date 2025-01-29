@@ -11,6 +11,15 @@ const Page = () => {
         const script = document.createElement("script");
         script.src = "https://assets.calendly.com/assets/external/widget.js";
         script.async = true;
+        script.onload = () => {
+            console.log("Calendly widget script loaded");
+            Calendly.initInlineWidget({
+                url: "https://calendly.com/carlos-alvarez-tym/30-minute-meeting-clone?background_color=05041a&text_color=ffffff&primary_color=21fdf6",
+                parentElement: document.querySelector(".calendly-inline-widget"),
+                prefill: {},
+                utm: {}
+            });
+        };
         document.body.appendChild(script);
 
         return () => {
@@ -32,8 +41,7 @@ const Page = () => {
                 </GradientText>
             </div>
             <div
-                className="calendly-inline-widget "
-                data-url="https://calendly.com/carlos-alvarez-tym/30-minute-meeting-clone?background_color=05041a&text_color=ffffff&primary_color=21fdf6"
+                className="calendly-inline-widget"
                 style={{ minWidth: "320px", height: "900px" }}
             ></div>
             <Image src="/assets/images/dots.png" alt="" className="w-full absolute opacity-20 top-0 left-1/2 -translate-x-1/2 -z-[1]" width={1500} height={400} />
