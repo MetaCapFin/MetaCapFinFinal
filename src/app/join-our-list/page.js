@@ -14,7 +14,7 @@ const Page = () => {
         document.body.appendChild(script);
 
         const handleEventScheduled = (event) => {
-            fetch("https://hooks.zapier.com/hooks/catch/your-webhook-id/", {
+            fetch("https://hooks.zapier.com/hooks/catch/20787888/2fsz8hg/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
