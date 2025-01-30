@@ -51,6 +51,13 @@ const Page = () => {
 
             if (response.ok) {
                 setShowModal(true); // Show the modal on successful form submission
+                setFormData({ // Clear the form fields
+                    firstName: '',
+                    lastName: '',
+                    companyName: '',
+                    email: '',
+                    phoneNumber: ''
+                });
                 console.log('Form submitted successfully');
             } else {
                 console.error('Form submission error');
