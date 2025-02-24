@@ -13,9 +13,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:image" content="/Logo.png" />
+        <meta property="og:url" content="https://www.metacap.finance/" />
+      </head>
       <body className={`${heebo.className} antialiased`}>
         <Header />
-        <img src="/public/Logo.png" alt="Logo" />
         {children}
         <Footer />
       </body>
