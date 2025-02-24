@@ -1,9 +1,9 @@
 import Header from "@/components/header/header";
 import "./globals.css";
 import Footer from "@/components/footer/footer";
-import { Heebo } from 'next/font/google'
+import { Heebo } from 'next/font/google';
 
-const heebo = Heebo({ subsets: ['latin'] })
+const heebo = Heebo({ subsets: ['latin'] });
 
 export const metadata = {
   title: "Meta Capital",
@@ -13,17 +13,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-     <head>
+      <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link rel="icon" href="/Logo.png" type="image/png" />
       </head>
-      <body
-        className={`${heebo.className} antialiased`}
-      >
-        <Header/>
-          {children}
-       
+      <body className={`${heebo.className} antialiased`}>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );
