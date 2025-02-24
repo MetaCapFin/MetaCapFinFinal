@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${heebo.className} antialiased`}>
         <Header />
-        <img src="/path/to/Logo.png" alt="Logo" />
+        <<img src="/public/Logo.png" alt="Logo" />
         {children}
         <Footer />
       </body>
