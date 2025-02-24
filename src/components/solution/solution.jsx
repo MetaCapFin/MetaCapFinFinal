@@ -18,7 +18,7 @@ const Solution = () => {
                 <GradientText className="my-6" small>
                     Working capital solution built to propel your <span>growth</span>
                 </GradientText>
-                <p className='lg:text-xl text-white/70 font-light'>MetaCap understands your business challenges. Currently working with more than a dozen integrations. Our platform along with our intimate understanding of the industry. Will propel your business to new heights.</p>
+                <p className='lg:text-xl text-white/70 font-light'>MetaCap understands your business challenges. Currently working with more than a dozen integrations, our platform along with our intimate understanding of the industry, will propel your business to new heights.</p>
                 <p className='lg:text-xl text-white/70 mt-3 font-light'>“Think of us as high octane gasoline for your sales and production engine 🚀”.</p>
             </div>
             <div onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)}>
